@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributr and nth child pesudo selectors</title>
+    <style>
+        a[target='-self']{
+            color:yellow;
+            border: 4px solid black;
+        
+        }
+        input[type='emial']{
+            color: blue;
+            border: 4px solid black;
+        }
+        li:nth-child(3n+3){
+            color: red;
+        }
+        li:nth-child(even){
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">go to  google</a></h>
+            <h1><a href="http://facebook.com" target="_blank">go to facebook</a></h>  
+                <form action="" class="form-control">
+                    <input type="text" placeholder="Enter your name">
+                    <input type="email" placeholder="Enter your email">
+                    <input type="password" placeholder="Enter your password">
+                    <input type="submit" value="Submit">
+                </form>
+                <ul>
+                    <li class="item" id="item-1">Item1</li>
+                    <li class="item" id="item-2">Item2</li>
+                    <li class="item" id="item-3">Item3</li>
+                    <li class="item" id="item-4">Item4</li>
+                    <li class="item" id="item-5">Item5</li>
+                    <li class="item" id="item-6">Item6</li>
+                    <li class="item" id="item-7">Item7</li>
+                    <li class="item" id="item-8">Item8</li>
+                    <li class="item" id="item-9">Item9</li>
+                    <li class="item" id="item-10">Item10</li>
+                </ul>
+            </div>
+        </body>       
+
+    </div> 
+</body>
+</html>
